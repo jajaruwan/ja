@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        /* การตั้งค่าพื้นฐาน */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2em;
+            border-radius: 10px;
+        }
+
+        /* สำหรับหน้าจอขนาดใหญ่ */
+        @media (min-width: 1024px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /* สำหรับหน้าจอขนาดกลาง */
+        @media (max-width: 1023px) and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        /* สำหรับหน้าจอขนาดเล็ก */
+        @media (max-width: 767px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        <h2>jaruwan Daengsaard</h2>
+    </div>
+</body>
+</html>
